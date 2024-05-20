@@ -1,6 +1,33 @@
 /* ----------media query---------- */
+/* @media (max-height: 1000px) {
+    .sidebar-section-left-icons::after {
+        bottom: 99.5%;
+    }
 
-@media screen and (max-width: 1440px) {
+    .user2-main {
+        height: 66vh;
+    }
+}
+
+@media (max-height: 695px) {
+    .user2-main {
+        height: 48vh;
+    }
+} */
+
+@media (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 1440px) {
     /* .section-1,
     .section-2,
     .section-3,
@@ -22,7 +49,7 @@
     }
 
     .user2-main {
-        height: 59vh;
+        height: 62vh;
     }
 
     .onclick-image img {
@@ -38,9 +65,9 @@
 
 
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .user2-main {
-        height: 55vh;
+        height: 62vh;
     }
 }
 
@@ -67,7 +94,7 @@
 
 
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .swiper-button i {
         display: none;
     }
@@ -101,7 +128,7 @@
 
 
 
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
     .sidebar-section-left {
         position: fixed;
         top: 0;
@@ -162,9 +189,15 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-    .home-content{
+    .cursor-1,
+    .cursor-2 {
+        display: none;
+    }
+
+
+    .home-content {
         padding: 32px;
     }
 
@@ -189,7 +222,7 @@
 
 
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
 
     .info-detail,
     .info-detail h2 {
@@ -242,13 +275,17 @@
 
     .about-content-1 h1,
     .services-content-1 h1 {
-        font-size: 9rem;
+        font-size: 8rem;
+    }
+
+    .about-content-main .about-text p {
+        margin: 0 -2rem;
     }
 }
 
 
 
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
 
     .section-1,
     .section-2,
@@ -309,30 +346,38 @@
         display: none;
     }
 
+    .sidebar-icons2 {
+        background: none;
+    }
+
+    .sidebar-icons2 .tooltip {
+        padding: 5px 10px;
+        margin: 0 5px 10px;
+        right: 25%;
+        border-radius: 20%;
+        backdrop-filter: blur(30px);
+        border: 1px solid var(--sidebar-text-color);
+        -webkit-backdrop-filter: blur(30px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.237), 0 0 20px rgba(0, 0, 0, 0.671);
+    }
+
+    .sidebar-icons2 .tooltip:focus {
+        border: 1px solid var(--sidebar-text-color);
+        transform: scale(1.1);
+    }
+
     .sidebar-icons2 .game {
         right: 0;
     }
 
-    .sidebar-icons2 {
-        background: none;
-        padding: 10px;
-        padding-bottom: 20px;
-    }
-
-    .sidebar-icons2 a {
-        padding: 10px 8px;
-        border-radius: 50%;
-        border: 2px solid var(--second-bg-color);
-        background: linear-gradient(145deg, var(--second-bg-color), var(--bg-color));
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.237), 0 0 20px rgba(0, 0, 0, 0.671);
+    .sidebar-icons2 .tooltip a {
+        display: flex;
         text-align: center;
         justify-content: center;
-        align-items: center;
-        display: flex;
     }
 
-    .sidebar-icons2 a:focus {
-        border: 2px solid var(--white-color);
+    .change-theme {
+        right: 110%;
     }
 
     .tooltip {
@@ -352,10 +397,11 @@
         z-index: 999;
         display: flex;
         background: var(--second-bg-color);
+        border-bottom: 1px solid var(--main-color);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.237), 0 0 20px rgba(0, 0, 0, 0.671);
     }
 
-    .top-nav .nav-main-logo {
+    .top-nav .nav-main-logo a {
         display: flex;
         text-align: center;
         align-items: center;
@@ -406,6 +452,8 @@
     .services-content-main #popupFive.active3,
     .services-content-main #popupSix.active3 {
         top: 55%;
+        margin-left: 0rem;
+        margin-right: -13rem;
     }
 
     .services-content-main .popup1 p {
@@ -425,20 +473,9 @@
         width: 140px;
     }
 
-}
-
-
-
-
-
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
+    .tooltip-text {
+        left: -15px;
+        top: -40px;
     }
 
 }
@@ -446,8 +483,14 @@
 
 
 
-@media screen and (max-width: 480px){
-    .home-content{
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .home-content {
         padding: 27px;
     }
 }
@@ -455,7 +498,7 @@
 
 
 
-@media screen and (max-width: 425px){
+@media (max-width: 425px) {
 
     .section-1,
     .section-2,
@@ -469,8 +512,8 @@
     .portfolio-content-main,
     .contact-content-main {
         padding: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .section-1,
@@ -485,33 +528,274 @@
         padding-bottom: 20px;
     }
 
-    .home-content{
+    .home-content {
         padding: 27px;
     }
-    
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 6.5vw;
     }
 
-    .home-content h4{
+    .home-content h4 {
         font-size: 1.4rem;
     }
 
-    .home-content-2 .experience h3{
+    .home-content-2 .experience h3 {
         font-size: 1.5rem;
     }
 
-    .home-content-2 .experience h2{
+    .home-content-2 .experience h2 {
         font-size: 2rem;
     }
 
     .about-content-1 h1,
     .services-content-1 h1 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
-    .portfolio-contact-box h1{
+    .about-content-main .about-me img {
+        width: 100%;
+    }
+
+    .portfolio-contact-box h1 {
         font-size: 6vw;
     }
 
+    .contact-box-main .contact-box {
+        margin: 3rem 0;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .section-1 {
+        padding-top: 90px;
+    }
+
+    .home-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .home-content h4 i {
+        font-size: 1rem;
+    }
+
+    .home-content .btn-box a,
+    .card_box .btn-box a,
+    .about-content-main .about-text .btn-box a,
+    .portfolio-contact-box .btn-box a,
+    .contact-content-main .contact form .btn-box {
+        font-size: 1.4rem;
+    }
+
+    .main span {
+        font-size: 20px;
+        padding: 19px;
+    }
+
+
+    .open-sidebar i {
+        position: relative;
+        left: -12px;
+        padding: 20px;
+        background: var(--bg-color);
+        font-size: 28.5px;
+    }
+
+    .top-nav .nav-main-logo h6 {
+        font-size: 1.3rem;
+    }
+
+    .top-nav .nav-main-logo img {
+        width: 24px;
+    }
+
+    .top-nav {
+        height: 67px;
+    }
+
+    .home-content-2 .experience h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-content-2 .experience h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-content-main .about-me img {
+        width: 70vw;
+    }
+
+    .about-content-main .about-text h4 {
+        line-height: 40px;
+    }
+
+    .about-content-1 h1,
+    .services-content-1 h1 {
+        font-size: 6rem;
+    }
+
+    .contact-box-main .contact-box .contact-div2 span {
+        font-size: 1.2rem;
+    }
+
+    .contact-box-main .contact-box .contact-div1 h3 {
+        font-size: 1.2rem;
+        margin: 9px 0;
+    }
+
+    .contact-content-main .contact form .input-box .input-feild input,
+    .contact-content-main .contact form .feild .item {
+        font-size: 1.2rem;
+    }
+
+    form .input-box span {
+        padding: 17px 15px;
+    }
+
+    .home-content-6 p {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .section-1,
+    .about-content-main,
+    .services-content-main,
+    .resume-content-main,
+    .portfolio-content-main,
+    .contact-content-main {
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 11px;
+        padding-bottom: 1px;
+    }
+
+    .section-1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .section-2 {
+        padding: 35px;
+    }
+
+    .change-theme {
+        width: 200px;
+    }
+
+    .change-theme form {
+        padding: 14px;
+    }
+
+    .theme-color input[type="radio"] {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .theme-color .form-2 input[type="radio"] {
+        width: .8rem;
+        height: .8rem;
+    }
+
+    .change-theme h1 {
+        font-size: 1.4rem;
+    }
+
+    .home-content {
+        box-shadow: none;
+        padding: 30px 18px;
+    }
+
+    .home-content h3 {
+        font-size: 7.7vw;
+    }
+
+    .tooltip-text {
+        left: -20px;
+        top: -40px;
+    }
+
+    .main span {
+        font-size: 20px;
+        padding: 17px;
+    }
+
+    .open-sidebar i {
+        position: relative;
+        left: -12px;
+        padding: 22.5px;
+        background: var(--bg-color);
+        font-size: 20px;
+    }
+
+    .top-nav .nav-main-logo h6 {
+        font-size: 1.2rem;
+    }
+
+    .top-nav .nav-main-logo img {
+        width: 24px;
+    }
+
+    .top-nav {
+        height: 65px;
+    }
+
+    .about-content-1 h2,
+    .services-content-1 h2 {
+        font-size: 2.7rem;
+    }
+
+    .about-content-1 h1,
+    .services-content-1 h1 {
+        font-size: 6rem;
+    }
+
+    .card_box,
+    .home-content-3 .service-box {
+        margin: 3rem 0;
+    }
+
+    .home-content-5 .logo {
+        margin: 4rem 0;
+    }
+
+    .sidebar-icons2 .game {
+        font-size: 2rem;
+    }
+
+    .sidebar-icons2 a {
+        font-size: 2.2rem;
+    }
+
+    .sidebar-icons2 {
+        background: none;
+        padding: 15px;
+        padding-bottom: 9px;
+    }
+
+    .onclick-image .closebtn3 {
+        font-size: 3rem;
+    }
+
+    .onclick-image .closebtn2 {
+        font-size: 2.4rem;
+    }
+
+    .onclick-image .closebtn1 {
+        font-size: 2.5rem;
+    }
+
+    .resume-skill-1,
+    .resume-skill-2 {
+        padding: 7px;
+    }
+
+    .contact-content-main .contact form .textarea-feild span,
+    .contact-content-main .contact form .input-box span {
+        padding: 17px 15px;
+    }
 }
