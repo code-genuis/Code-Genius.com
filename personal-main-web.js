@@ -44,12 +44,22 @@ loading()
 // })
 
 
+// function headingAnimation(){
+    // document.getElementById("heading-animation");
+    // let element = document.querySelectorAll("#heading-animation");
+    // element.toUpperCase();
+// };
+// headingAnimation();
+
+
+
+
 
 
 
 // right menu
 function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("mySidenav").style.width = "320px";
     document.getElementById("main").style.marginRight = "0";
     const show = document.getElementById('show');
     show.classList.toggle('show2');
@@ -165,7 +175,13 @@ function slider() {
         },
 
         breakpoints: {
-            300: {
+            350: {
+                slidesPerView: 1,
+            },
+            375: {
+                slidesPerView: 1,
+            },
+            425: {
                 slidesPerView: 1,
             },
             600: {
